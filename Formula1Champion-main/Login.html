@@ -5,54 +5,147 @@
     <title>Login</title>
     <style>
         body {
+            margin: 2vh;
+            height: 100vh;
+        }
+
+        div {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
         }
 
-        div {
-            justify-content: center;
+        form {
             width: 100%;
+            color: #000;
         }
 
-        button {
-            height: 50px;
-            border-radius: 10px;
+        .cuerpo {
+            height: 100vh;
+        }
+
+        
+        .botones {
             width: 100%;
+            justify-content: space-between;
+            text-align: center;
+        }
+
+        .boton {
+            width: 17vh;
+        }
+
+        .google {
+            color: #000;
+            height: 6vh;
+            border-radius: 1vh;
+            width: 100%;
+            border-style: solid;
+            border-width: 0.3vh;
+            text-decoration: none;
+            cursor: pointer;
+            opacity: 0.5;
         }
 
         .inicio_sesion {
+            height: 6vh;
+            border-radius: 3vh;
             background-color: red;
-            
+            width: 100%;
+            opacity: 0.9;
+            border: none;
+        }
+
+        input[type=submit] {
+            width: 100%;
+        }
+
+        input[type=password] {
+            width: 100%;
+            height: 6vh;
+            border-radius: 1vh;
+        }
+
+        input[type=text] {
+            width: 100%;
+            height: 6vh;
+            border-radius: 1vh;
+        }
+
+        .inicio_sesion:hover {
+            opacity: 1;
+        }
+
+        .sesion_div {
+            width: 100%;
+        }
+
+        .texto {
+            text-align: center;
+            width: 100%;
+        }
+
+        .form {
+            width: 100%;
+            opacity: 0.5;
         }
 
         span {
-
+            opacity: 0.5;
         }
+
+        
+        a {
+            opacity: 1;
+        }
+
     </style>
     
 </head>
 <body>
-    <img src="Imágenes\f1-abu-dhabi-gp-2017-f1-logo-6614917.jpg" alt="logo_f1" width="300" height="300">
+    <div class="cabezera">
 
-    <div>
-        <form action="">
-            <label for="Email">Email</label><br>
-            <input type="text" placeholder="tu.correo@ejemplo.com"><br><br>
-            <label for="Contraseña">Contraseña</label><br>
-            <input type="password" placeholder="********"><br>
-        </form>
     </div>
 
-    
-    <button type="submit" class="inicio_sesion">Iniciar sesión</button>
-    
-    <span>O continúa con </span>
+    <div class="cuerpo">
+        <img src="Imágenes\f1-abu-dhabi-gp-2017-f1-logo-6614917.jpg" alt="logo_f1" width="300" height="300">
 
-    <button type="submit">Google</button>
-    
-    <button type="submit">Facebook</button>
+        <div class="form">
+            <form action="">
+                <label for="Email">Email</label><br>
+                <input type="text" placeholder="tu.correo@ejemplo.com"><br><br>
+                <label for="Contraseña">Contraseña</label><br>
+                <input type="password" placeholder="********"><br>
+            </form>
 
-    <p>¿Has olvidado tu contraseña? <u>Contáctanos.</u></p>
+            
+        </div>
+
+        <div class="sesion_div">
+            <form action="Usuario\Inicio.html">
+                <input type="submit" class="inicio_sesion">
+            </form>
+        </div>
+        
+        
+        <div class="texto">
+            <span>O continúa con</span>
+        </div>
+        
+        <div class="botones">
+            <div class="boton">
+                <a href="https://www.google.com/?safe=active&ssui=on" class="google">Google</a>
+            </div>
+            <div class="boton">
+                <a href="https://www.facebook.com/?locale=es_ES" class="google">Facebook</a>
+            </div>
+        </div>
+        
+        <span>¿Has olvidado tu contraseña? <a href="Login.html"><u>Contáctanos.</u></a></span>
+    </div>
+    
+    <div class="pie">
+
+    </div>
 </body>
 </html>
