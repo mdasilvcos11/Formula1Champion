@@ -3,14 +3,117 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        
+
+.dropbtn {
+ 
+  color:red;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:red;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: red;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+        
+    </style>
 </head>
 <body>
+
+
+<div class="dropdown">
+  <button class="dropbtn"><img src="menu.png" alt="" width="30px"></button>
+  <div class="dropdown-content">
+  <a href="#">Inicia sesion/Registrate</a>
+  <a href="#">Inicio</a>
+  <a href="#">Grand Prix</a>
+  <a href="#">Equipos</a>
+  <a href="#">Pilotos</a>
+  <a href="#">Clasificacion</a>
+  </div>
+</div>
+<div class="logo">
+    <img src="logooo.png" alt="" width="20%">
+
+    </div>
     <h1>Equipos</h1>
 
-    <img src="image (12).png" alt="" width="350"><br>
-    <br>
+   <div class="container">
+    <div class="column">
+        <img src="coche1.png" style="width:50%;">
+    </div>
+         <img src="coche2.png" style="width:50%;">
+    </div>
+         <img src="coche3.png" style="width:50%;">
+    </div>
+         <img src="coche4.png" style="width:50%;">
+    </div>
+         <img src="coche5.png" style="width:50%;">
+    </div>
 
-    <button>Volver al incio</button>
+    <div class="column">
+        <img src="coche1.png" style="width:50%;">
+    </div>
+         <img src="coche2.png" style="width:50%;">
+    </div>
+         <img src="coche3.png" style="width:50%;">
+    </div>
+         <img src="coche4.png" style="width:50%;">
+    </div>
+         <img src="coche5.png" style="width:50%;">
+    </div>
+
+    <div class="column">
+        <img src="coche1.png" style="width:50%;">
+    </div>
+         <img src="coche2.png" style="width:50%;">
+    </div>
+         <img src="coche3.png" style="width:50%;">
+    </div>
+         <img src="coche4.png" style="width:50%;">
+    </div>
+         <img src="coche5.png" style="width:50%;">
+    </div>
+
+   
+
+   </div>
+   <br>
+   <br>
+   <br>
+
+    <button class="button">Volver al inicio</button>
 
 
 
