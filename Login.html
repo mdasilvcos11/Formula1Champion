@@ -5,7 +5,10 @@
     <title>Login</title>
     <style>
         body {
-            margin: 2vh;
+            margin-top: 0;
+            margin-bottom: 0;
+            margin-left: 2vh;
+            margin-right: 2vh;
             height: 100vh;
         }
 
@@ -45,6 +48,7 @@
             text-decoration: none;
             cursor: pointer;
             opacity: 0.5;
+            align-content: center;
         }
 
         .inicio_sesion {
@@ -58,6 +62,7 @@
 
         input[type=submit] {
             width: 100%;
+            color: white;
         }
 
         input[type=password] {
@@ -99,11 +104,15 @@
             opacity: 1;
         }
 
+        .labels {
+            font-weight: bold;
+        }
+
     </style>
     
 </head>
 <body>
-    <div class="cabezera">
+    <div class="cabecera">
 
     </div>
 
@@ -112,9 +121,9 @@
 
         <div class="form">
             <form action="">
-                <label for="Email">Email</label><br>
+                <label for="Email" class="labels">Email</label><br>
                 <input type="text" placeholder="tu.correo@ejemplo.com"><br><br>
-                <label for="Contraseña">Contraseña</label><br>
+                <label for="Contraseña" class="labels">Contraseña</label><br>
                 <input type="password" placeholder="********"><br>
             </form>
 
@@ -123,7 +132,7 @@
 
         <div class="sesion_div">
             <form action="Usuario\Inicio.html">
-                <input type="submit" class="inicio_sesion">
+                <input type="submit" value="Iniciar sesión" class="inicio_sesion">
             </form>
         </div>
         
